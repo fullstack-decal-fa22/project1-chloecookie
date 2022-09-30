@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<style> 
+
+.favorite_foods > div {
+  background-color: #f1f1f1;
+  margin: 10px;
+  padding: 20px;
+  font-size: 30px;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  background-color: #2196F3;
+  padding: 10px;
+}
+
+.grid-item {
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  padding: 20px;
+  font-size: 30px;
+  text-align: center;
+}
+    
+
+a:hover {
+    background-color:pink
+}
+</style>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chloe's Website</title>
+    <meta name="author" content="Chloe Chia">
+
+</head>
+    <link rel="stylesheet" href="styles.css">
+
+<body>
+    <img src="flowers.jpeg" alt="Notion Header">
+    <h1 id="first">Hi!</h1>
+    <h2 class="headers">About</h2>
+    <p>Hi! I'm Chloe. I'm a freshman at Berkeley studying CS and Urban Studies. Welcome to my site!</p>
+    <a href="https://chloechia.com" target="_blank">Check out my personal website</a>
+    <h2 class="headers">Work</h2>
+    <h3>Munch</h3>
+    <p>Food ordering by text startup. Acquired in early 2021.</p>
+    <h3>Thryft</h3>
+    <p>First growth hire at a YC Backed Startup</p>
+    <h2 class="headers">Contact</h2>
+    <p>Email me at chloechia@gmail.com</p>
+    <h2 class="headers">My favorite foods</h2>
+    <div class="favorite_foods">
+        <div>bingsoo</div>
+        <div>butter popcorn</div>
+        <div>beef noodles</div>
+    </div>
+
+    <h2 class="headers">My favorite kdramas</h2>
+
+    <div class="grid-container">
+        <div class="grid-item">penthouse</div>
+        <div class="grid-item">strong woman do bong soon</div>
+        <div class="grid-item">weightlifting fairy</div>
+        <div class="grid-item">vincenzo</div>
+        <div class="grid-item">squid game</div>
+        <div class="grid-item">money heist korea</div>
+    </div>
+    <h4>Subscribe to my newsletter</h4>
+    
+    <form>
+    <p>
+        <label>Email : <input type="text" /></label>
+    </p>
+
+    </form>
+    
+    <h5 id="demo"></h5>
+
+    <button onclick="myFunction()">Submit</button>
+    
+    <script>
+        function myFunction() {
+            document.getElementById("demo").innerHTML = "Thanks for subscribing!";
+        }
+    </script>
+   
+</body>
+</html>
